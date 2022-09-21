@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="./main.css" />
   <title>Levél a Tankernek</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -19,7 +20,7 @@
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt
       mollit anim id est laborum.
     </div>
-    <form id="tanker_form" action="mailto:ugyfelszolgalat@kk.gov.hu" method="GET">
+    <form id="tanker_form" enctype="text/plain" action="mailto:ugyfelszolgalat@kk.gov.hu" method="GET">
       <select id="tanker">
         <option selected value="ugyfelszolgalat@kk.gov.hu">Országos Klebelsberg Központ</option>
         <option value="baja@kk.gov.hu">Bajai Tankerületi Központ</option>
@@ -101,7 +102,7 @@ Kérem, a fentebb említett okok miatt tartózkodjon az elégedetlen tanárokkal
 xy
         </textarea>
       <textarea name="cc">ugyfelszolgalat@kk.gov.hu</textarea>
-      <textarea name="bcc"></textarea>
+      <textarea name="bcc">diakokatanarokert@gmail.com</textarea>
       <textarea name="subject">Szolidaritási nyilatkozat</textarea>
       <input type="submit" id="send" value="Küldés"></button>
     </form>
@@ -125,7 +126,7 @@ xy
         <div>
           <div>BCC:</div>
           <div style="margin-left: 1em">
-            dat@gmail.com
+            diakokatanarokert@gmail.com
           </div>
         </div>
         <div style="border-bottom: 1px solid;">
