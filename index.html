@@ -20,7 +20,7 @@
         emailt, de ha nem szeretnéd, akkor távolíts el minket a BCC-ből. Ha elküldted, de szeretnéd hogy töröljük az
         emailt amit megkaptunk, írj a <span style="color:#2eebff;">diakokatanarokert@gmail.com</span> címre!</i>
     </div>
-    <form id="tanker_form" enctype="text/plain" action="mailto:ugyfelszolgalat@kk.gov.hu" method="GET">
+    <form id="tanker_form" enctype="text/plain" action="mailto:ugyfelszolgalat@kk.gov.hu" method="POST">
       <select id="tanker">
         <option selected value="ugyfelszolgalat@kk.gov.hu">Országos Klebelsberg Központ</option>
         <option value="baja@kk.gov.hu">Bajai Tankerületi Központ</option>
@@ -84,7 +84,7 @@
         <option value="veszpremitk@kk.gov.hu">Veszprémi Tankerületi Központ</option>
         <option value="zalaegerszeg@kk.gov.hu">Zalaegerszegi Tankerületi Központ</option>
       </select>
-      <textarea name="body" type="text">
+      <!--<textarea name="body">
 Tisztelt Tankerületi Vezető!
 
 Az elmúlt két hétben, Ön és/vagy az Ön kollégája fenyegető levelet küldött több polgári elégedetlenségben résztvevő pedagógusnak is. Mint felelős állampolgár elutasítom a pedagógusok e méltatlan kezelését kiváltképp Maruzsa Zoltán államtitkár Úr cinikus és álszent megnyilvánulását a tanárok polgári engedetlenségével kapcsolatban, melyben absztrakt morális szabályokra hivatkozva félemlíti meg, az amúgy is méltatlan bánásmódban részesülő tanárokat.
@@ -103,7 +103,7 @@ név
       </textarea>
       <textarea name="cc">ugyfelszolgalat@kk.gov.hu</textarea>
       <textarea name="bcc">diakokatanarokert@gmail.com</textarea>
-      <textarea name="subject">Szolidaritási nyilatkozat</textarea>
+      <textarea name="subject">Szolidaritási nyilatkozat</textarea>-->
       <input type="submit" id="send" value="Küldés"></button>
     </form>
     <div style="font-weight: 600; font-size: 35px; margin-bottom: 1.5rem">
