@@ -10,8 +10,8 @@ form.addEventListener("submit", (e) => {
     let email = select.value;
 	form.action = "mailto:" + email + "?subject=Szolidarit%C3%A1si%20nyilatkozat" 
                                     + "&cc=ugyfelszolgalat@kk.gov.hu" 
-                                    + "&bcc=diakokatanarokert@gmail.com"
-                                    + "&body=" + body;
+                                    + "&bcc=diakokatanarokert@gmail.com";
+                                    //+ "&body=" + body;
     console.log(form.action);
 });
 
