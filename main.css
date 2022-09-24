@@ -86,6 +86,7 @@ input[type="text"] {
   cursor: pointer;
   transition: all 50ms ease-in-out;
   border-style: none;
+  text-decoration: none;
 }
 
 #send.disabled {
@@ -96,12 +97,12 @@ input[type="text"] {
   color: lightgray;
 }
 
-input:hover, input:focus, input:focus-within, input:target {
+#send:hover, #send:focus, #send:focus-within, #send:target {
   background: #b71616 !important;
   background: radial-gradient(#b20c0c, #d90b0b) !important;
 }
 
-input:active {
+#send:active {
 box-shadow: inset 0px 0px 4px 0px #470f0f;
 background: radial-gradient(#c51717, #f21e1e) !important;
 }

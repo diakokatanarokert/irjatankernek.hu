@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
   <link rel="stylesheet" href="./main.css" />
   <title>Levél a Tankernek</title>
-  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -20,7 +20,7 @@
         emailt, de ha nem szeretnéd, akkor távolíts el minket a BCC-ből. Ha elküldted, de szeretnéd hogy töröljük az
         emailt amit megkaptunk, írj a <span style="color:#2eebff;">diakokatanarokert@gmail.com</span> címre!</i>
     </div>
-    <form id="tanker_form" enctype="text/plain" action="mailto:ugyfelszolgalat@kk.gov.hu" method="POST">
+    <form id="tanker_form">
       <select id="tanker">
         <option selected value="ugyfelszolgalat@kk.gov.hu">Országos Klebelsberg Központ</option>
         <option value="baja@kk.gov.hu">Bajai Tankerületi Központ</option>
@@ -84,7 +84,7 @@
         <option value="veszpremitk@kk.gov.hu">Veszprémi Tankerületi Központ</option>
         <option value="zalaegerszeg@kk.gov.hu">Zalaegerszegi Tankerületi Központ</option>
       </select>
-      <textarea name="&nbsp">
+      <!--<textarea name="body">
 Tisztelt Tanker&#252;leti Vezet&#337;! =
 
 Az elm&#250;lt k&#233;t h&#233;tben, &#214;n &#233;s/vagy az &#214;n koll&#233;g&#225;ja fenyeget&#337; levelet k&#252;ld&#246;tt t&#246;bb polg&#225;ri el&#233;gedetlens&#233;gben r&#233;sztvev&#337; pedag&#243;gusnak is. Mint felel&#337;s &#225;llampolg&#225;r elutas&#237;tom a pedag&#243;gusok e m&#233;ltatlan kezel&#233;s&#233;t kiv&#225;ltk&#233;pp Maruzsa Zolt&#225;n &#225;llamtitk&#225;r &#218;r cinikus &#233;s &#225;lszent megnyilv&#225;nul&#225;s&#225;t a tan&#225;rok polg&#225;ri engedetlens&#233;g&#233;vel kapcsolatban, melyben absztrakt mor&#225;lis szab&#225;lyokra hivatkozva f&#233;leml&#237;ti meg, az am&#250;gy is m&#233;ltatlan b&#225;n&#225;sm&#243;dban r&#233;szes&#252;l&#337; tan&#225;rokat.
@@ -100,12 +100,13 @@ K&#233;rem, a fentebb eml&#237;tett okok miatt tart&#243;zkodjon az el&#233;gede
 
 Tisztelettel,
 n&#233;v
-      </textarea><!--
+      </textarea>
       <textarea name="cc">ugyfelszolgalat@kk.gov.hu</textarea>
       <textarea name="bcc">diakokatanarokert@gmail.com</textarea>
-      <textarea name="subject">Szolidaritási nyilatkozat</textarea>-->
-      <input type="submit" id="send" value="Küldés"></button>
+      <textarea name="subject">Szolidaritási%20nyilatkozat</textarea>
+      <input type="submit" id="send" value="Küldés">-->
     </form>
+    <a id="send" href="mailto:ugyfelszolgalat@kk.gov.hu">Küldés</a>
     <div style="font-weight: 600; font-size: 35px; margin-bottom: 1.5rem">
       VAGY
     </div>
