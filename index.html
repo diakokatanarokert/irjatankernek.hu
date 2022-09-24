@@ -1,21 +1,49 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="utf-8" />
   <link rel="stylesheet" href="./main.css" />
   <title>Levél a Tankernek!</title>
-  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://irjatankernek.hu/favicon.ico" type="image/x-icon" />
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed""
+  href=" https://irjatankernek.hu/apple-touch-icon.png" />
+  <!-- facebook -->
+  <meta property="og:title" content="Írj emailt a Tankerületednek!" />
+  <meta property="og:description"
+    content="Állj ki a tanáraidért! Szeptember eleje óta több több polgári elégedetlenségben résztvevő pedagógus is fenyegető leveleket kapott tankerületüktől. Küldj emailt a tankerednek vagy a Klebelsberg Központnak, hogy megmutasd, támogatod a tanárokat!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://irjatankernek.hu/" />
+  <meta property="og:image" content="https://irjatankernek.hu/card_image.png" />
+  <!-- twitter -->
+  <meta name="twitter:title" content="Írj emailt a Tankerületednek!">
+  <meta name="twitter:description"
+    content="Szeptember eleje óta több több polgári elégedetlenségben résztvevő pedagógus is fenyegető leveleket kapott tankerületüktől. Küldj emailt a tankerednek, hogy megmutasd, támogatod a tanárokat!">
+  <meta name="twitter:image" content="https://irjatankernek.hu/card_image.png">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
   <div id="background"></div>
   <div id="content">
-    <h1>Írj e-mailt a Tankerületednek!</h1>
+    <h1>Írj emailt a Tankerületednek!</h1>
     <div class="desc">
-      Állj ki a tanáraidért!
-      Egy kattintással el tudod küldeni az alábbi szolidaritási levelet az általad kiválasztott tankerületnek, de ha bármi probléma merülne fel, kézzel is ki tudod másolni a levél tartalmát!
+      <h2>Állj ki a tanáraidért!</h2>
+      Szeptember eleje óta több több polgári elégedetlenségben résztvevő pedagógus is fenyegető leveleket kapott
+      tankerületüktől. Küldj emailt a tankernek vagy a Klebelsberg Központnak, hogy megmutasd, támogatod a
+      tanárokat!<br />
+      Egy kattintással el tudod küldeni az alábbi szolidaritási levelet az általad kiválasztott tankerületnek, de ha nem
+      tudod melyik tankerülethez tartozol, vagy
+      bármi probléma merülne fel a gombbal, kézzel is ki tudod másolni a levél tartalmát. Ha szeretnéd, írd alá a
+      levelet saját neveddel!
+      <br />Az alábbi gomb a kiválasztott tankerületen kívül a Klebelsberg Központnak is elküld minden emailt.
+      <br /><i style="color: #d4d1d1;">Az emailban a szervezői cím is meg van jelölve, hogy tudjuk hányan küldtek
+        emailt, de ha nem szeretnéd, akkor távolítsd el a BCC-ből. Ha elküldted, de szeretnéd hogy töröljük az
+        emailt amit megkaptunk, írj a <span style="color:#2eebff;">diakokatanarokert@gmail.com</span> címre!</i>
     </div>
-    <form id="tanker_form" enctype="text/plain" action="mailto:ugyfelszolgalat@kk.gov.hu" method="GET">
+    <form id="tanker_form">
       <select id="tanker">
         <option selected value="ugyfelszolgalat@kk.gov.hu">Országos Klebelsberg Központ</option>
         <option value="baja@kk.gov.hu">Bajai Tankerületi Központ</option>
@@ -79,28 +107,8 @@
         <option value="veszpremitk@kk.gov.hu">Veszprémi Tankerületi Központ</option>
         <option value="zalaegerszeg@kk.gov.hu">Zalaegerszegi Tankerületi Központ</option>
       </select>
-      <textarea name="body">
-Tisztelt Tankerületi Vezető!
-
-Az elmúlt két hétben, Ön és/vagy az Ön kollégája fenyegető levelet küldött több polgári elégedetlenségben résztvevő pedagógusnak is. Mint felelős állampolgár elutasítom a pedagógusok e méltatlan kezelését kiváltképp Maruzsa Zoltán államtitkár Úr cinikus és álszent megnyilvánulását a tanárok polgári engedetlenségével kapcsolatban, melyben absztrakt morális szabályokra hivatkozva félemlíti meg, az amúgy is méltatlan bánásmódban részesülő tanárokat.
-
-Az oktatást egy felelős politika alapjának tartom, ezzel szemben, a kormány és az állami szervek hozzáállása a kérdéshez közel sem elégséges. Kérem, mielőtt legközelebb ilyen és ehhez hasonló megfélemlítő eszközökhöz nyúlna vegye figyelembe a következő tényezőket: 
-
-•	Egy kezdő pedagógus bére gyakran alig éri el a garantált bérminimumot melynek értéke nettó 173.000 Ft, míg konkrét béremelési terv jelenleg nem születtet meg, egy rohamosan dráguló, inflációs gazdasági helyzetben;
-•	A legtöbb főmunkaidőben dolgozó pedagógus a törvényben előírt maximális 26 órát tart egy héten, de a valóságban megtartott órák száma a fokozott tanárhiány miatt ennél magasabb. Figyelembe véve továbbá az órákra való felkészülést és egyéb adminisztrációs feladatokat, egy tanár munkahete akár az 50 órát is elérheti;
-•	A 2022. évi V. törvény 14. § súlyosan korlátozza a pedagógusok sztrájkjogát így a fentebb említett problémák elleni jogszerű fellépést a gyakorlatban szinte ellehetetleníti. Emlékeztetném, hogy az Alaptörvény deklarálja, hogy a sztrájk alapjognak számít és mint olyat korlátozni csak törvényesen legitim céllal és arányosan lehet.
-  
-Kérem, a fentebb említett okok miatt tartózkodjon az elégedetlen tanárokkal folytatott cinikus és szakszerűtlen kommunikációtól, helyette kezdeményezzen diskurzust az Önhöz tartozó tankerület iskoláinak tanáraival, diákönkormányzataival és a legnagyobb tanárszakszervezetekkel.
-
-
-Üdvözlettel,
-Egy oktatásért aggódó állampolgár
-        </textarea>
-      <textarea name="cc">ugyfelszolgalat@kk.gov.hu</textarea>
-      <textarea name="bcc">diakokatanarokert@gmail.com</textarea>
-      <textarea name="subject">Szolidaritási nyilatkozat</textarea>
-      <input type="submit" id="send" value="Küldés"></button>
     </form>
+    <a id="send" href="mailto:ugyfelszolgalat@kk.gov.hu">Küldés</a>
     <div style="font-weight: 600; font-size: 35px; margin-bottom: 1.5rem">
       VAGY
     </div>
@@ -131,8 +139,14 @@ Egy oktatásért aggódó állampolgár
           </div>
         </div>
       </div>
-      <div style="padding-top: 0.5em">
-        Tisztelt Tankerületi Vezető!<br />
+      <div id="bodytext" style="padding-top: 0.5em">
+        Tisztelt Tankerületi Vezető!<a id="copybody" tabindex="0" class="svg"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z">
+            </path>
+          </svg></a><br />
         <p>
           Az elmúlt két hétben, Ön és/vagy az Ön kollégája fenyegető levelet
           küldött több polgári elégedetlenségben résztvevő pedagógusnak is.
@@ -143,7 +157,6 @@ Egy oktatásért aggódó állampolgár
           félemlíti meg, az amúgy is méltatlan bánásmódban részesülő
           tanárokat.
         </p>
-
         <p>
           Az oktatást egy felelős politika alapjának tartom, ezzel szemben, a
           kormány és az állami szervek hozzáállása a kérdéshez közel sem
@@ -154,19 +167,19 @@ Egy oktatásért aggódó állampolgár
           <li>
             Egy kezdő pedagógus bére gyakran alig éri el a
             garantált bérminimumot melynek értéke nettó 173.000 Ft, míg konkrét
-            béremelési terv jelenleg nem születtet meg, egy rohamosan dráguló,
+            béremelési terv jelenleg nem született meg, egy rohamosan dráguló,
             inflációs gazdasági helyzetben;
           </li>
           <li>
             A legtöbb főmunkaidőben dolgozó
             pedagógus a törvényben előírt maximális 26 órát tart egy héten, de a
-            valóságban megtartott órák száma a fokozott tanárhiány miatt ennél
+            valóságban megtartott órák száma a fokozott tanár hiány miatt ennél
             magasabb. Figyelembe véve továbbá az órákra való felkészülést és
             egyéb adminisztrációs feladatokat, egy tanár munkahete akár az 50
             órát is elérheti;
           </li>
           <li>
-            A 2022. évi V. törvény 14. paragrafusa § súlyosan
+            A 2022. évi V. törvény 14. §-a súlyosan
             korlátozza a pedagógusok sztrájkjogát így a fentebb említett
             problémák elleni jogszerű fellépést a gyakorlatban szinte
             ellehetetleníti. Emlékeztetném, hogy az Alaptörvény deklarálja, hogy
@@ -180,14 +193,27 @@ Egy oktatásért aggódó állampolgár
           tanárokkal folytatott cinikus és szakszerűtlen kommunikációtól,
           helyette kezdeményezzen diskurzust az Önhöz tartozó tankerület
           iskoláinak tanáraival, diákönkormányzataival és a legnagyobb
-          tanárszakszervezetekkel.
+          tanár szakszervezetekkel.
         </p>
         <p>
-          <br />Üdvözlettel, Egy oktatásért aggódó állampolgár
+          <br />Tisztelettel,
+          <br />Egy oktatásért aggódó állampolgár
         </p>
       </div>
     </div>
+    <div id="copy_success">Email szöveg másolva ✔️</div>
+    <div id="copy_fail">Sikertelen másolás ❌</div>
   </div>
+  <footer>
+    <div>Diákok a Tanárokért</div>
+    <div><a style="color: #2eebff;" href="facebook.com">facebook poszt</a></div>
+    <!-- The favicon was generated using the following graphics from Twitter Twemoji:
+
+    - Graphics Title: 1f58b.svg
+    - Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
+    - Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f58b.svg
+    - Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/) -->
+  </footer>
   <script src="./main.js"></script>
 </body>
 

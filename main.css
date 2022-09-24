@@ -1,6 +1,7 @@
 @media screen and (max-width: 1000px) {
-  .desc, .mail {
-    width: 90% !important;
+  div.desc, div.mail {
+    width: 90%;
+    max-width: 90%;
   }
 }
 
@@ -16,8 +17,10 @@ body {
 }
 
 h1 {
-  font-size: 66px; 
+  font-size: 55px; 
   text-align: center;
+  max-width:90%;
+  word-wrap: break-word;
 }
 
 #background {
@@ -37,14 +40,19 @@ h1 {
 }
 
 .desc {
-  color: #d4d1d1; 
+  color: white; 
   margin: 0 auto; 
   width: 60%; 
   text-align: center;
+  line-height: 1.25;
+}
+
+.desc h2 {
+  margin: 0;
 }
 
 form {
-  margin: 1.5rem 0 0 0;
+  margin: 3rem 0 0 0;
   text-align: center;
 }
 
@@ -61,6 +69,10 @@ textarea {
   display: none;
 }
 
+input[type="text"] {
+  display: none;
+}
+
 #send {
   display: block;
   margin: 1rem auto 1.5rem auto;
@@ -74,6 +86,7 @@ textarea {
   cursor: pointer;
   transition: all 50ms ease-in-out;
   border-style: none;
+  text-decoration: none;
 }
 
 #send.disabled {
@@ -84,12 +97,12 @@ textarea {
   color: lightgray;
 }
 
-input:hover, input:focus, input:focus-within, input:target {
+#send:hover, #send:focus, #send:focus-within, #send:target {
   background: #b71616 !important;
   background: radial-gradient(#b20c0c, #d90b0b) !important;
 }
 
-input:active {
+#send:active {
 box-shadow: inset 0px 0px 4px 0px #470f0f;
 background: radial-gradient(#c51717, #f21e1e) !important;
 }
@@ -120,4 +133,48 @@ background: radial-gradient(#c51717, #f21e1e) !important;
 
 #CC {
   display:none;
+}
+
+footer {
+  padding: 5px 10px;
+  background: rgba(150, 150, 150, 0.9);
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg {
+  fill: gray;
+  transition: all 100ms ease-in-out;
+  float: right;
+}
+
+.svg svg {
+  height: 20px;
+}
+
+.svg:hover, .svg:focus, .svg:target {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.svg:active, .svg:focus {
+  fill: black;
+}
+
+#copy_success, #copy_fail {
+  position: fixed;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+  padding: .5em;
+  top: 10px;
+  line-height: 100%;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+  color:black;
+}
+
+#content div.visible {
+  opacity: 1;
 }
