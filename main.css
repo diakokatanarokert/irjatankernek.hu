@@ -142,3 +142,39 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+.svg {
+  fill: gray;
+  transition: all 100ms ease-in-out;
+  float: right;
+}
+
+.svg svg {
+  height: 20px;
+}
+
+.svg:hover, .svg:focus, .svg:target {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.svg:active, .svg:focus {
+  fill: black;
+}
+
+#copy_success, #copy_fail {
+  position: fixed;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+  padding: .5em;
+  top: 10px;
+  line-height: 100%;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+  color:black;
+}
+
+#content div.visible {
+  opacity: 1;
+}
