@@ -33,14 +33,18 @@ copybutton.addEventListener("click", (e) => {
 function updateClipboard(newClip) {
     navigator.clipboard.writeText(newClip).then(() => {
         console.log("Copy successful");
+        document.getElementById("copy_success").style.visibility = "visible";
         document.getElementById("copy_success").style.opacity = "1";
         setTimeout(() => {
+        document.getElementById("copy_success").style.visibility = "hidden";
         document.getElementById("copy_success").style.opacity = "0";
         }, 1500);
     }, () => {
         console.log("Copy failed");
+        document.getElementById("copy_success").style.visibility = "visible";
         document.getElementById("copy_fail").style.opacity = "1";
         setTimeout(() => {
+        document.getElementById("copy_success").style.visibility = "hidden";
         document.getElementById("copy_fail").style.opacity = "0";
         }, 1500);
     });

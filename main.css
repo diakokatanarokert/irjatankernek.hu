@@ -173,6 +173,7 @@ footer {
   opacity: 0;
   transition: opacity 250ms ease-in-out;
   color:black;
+  visibility: hidden;
 }
 
 #content div.visible {
