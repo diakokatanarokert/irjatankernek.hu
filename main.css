@@ -3,6 +3,10 @@
     width: 90%;
     max-width: 90%;
   }
+
+  div#notice {
+    max-width:90%;
+  }
 }
 
 body {
@@ -179,3 +183,21 @@ footer {
 #content div.visible {
   opacity: 1;
 }
+
+#notice {
+  max-width: 60%;
+  position: fixed;
+  bottom: 10px;
+  background: whitesmoke;
+  color: black;
+  border: 1px solid lightgray;
+  padding: .5em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+}
+
+.belsopest {
+  color:darkcyan;
+  font-weight: bold;
+}
+
